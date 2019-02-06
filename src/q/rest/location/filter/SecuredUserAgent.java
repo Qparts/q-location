@@ -25,6 +25,7 @@ import java.util.Map;
 @Priority(Priorities.AUTHENTICATION)
 public class SecuredUserAgent implements ContainerRequestFilter {
 
+
     @EJB
     private DAO dao;
 
@@ -41,7 +42,6 @@ public class SecuredUserAgent implements ContainerRequestFilter {
             String username = values[1].trim();
             String appSecret = values[2].trim();
             String type = values[3].trim();
-
             matchToken(token, username, appSecret, type, header);
         }
         catch (Exception ex){
