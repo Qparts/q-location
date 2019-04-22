@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
-    <persistence-unit name="QProductPU" transaction-type="JTA">
+    <persistence-unit name="QLocationPU" transaction-type="JTA">
         <jta-data-source>java:jboss/datasources/q_location</jta-data-source>
         <properties>
             <property name="hibernate.show_sql" value="false"/>

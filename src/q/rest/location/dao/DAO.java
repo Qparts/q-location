@@ -8,7 +8,7 @@ import java.util.List;
 
 @Stateless
 public class DAO {
-    @PersistenceContext(unitName = "QProductPU")
+    @PersistenceContext(unitName = "QLocationPU")
     private EntityManager em;
 
 
