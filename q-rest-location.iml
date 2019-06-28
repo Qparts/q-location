@@ -7,6 +7,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" />
+          <factory-entry name="QLocationPU" />
           <factory-entry name="QProductPU" />
         </datasource-mapping>
         <naming-strategy-map />

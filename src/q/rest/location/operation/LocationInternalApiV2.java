@@ -11,7 +11,9 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @Path("/internal/api/v2/")
@@ -127,10 +129,30 @@ public class LocationInternalApiV2 implements Serializable {
     @GET
     @Path("cities")
     @SecuredUser
-    public Response getACities(){
+    public Response getCities(){
         try{
             List<City> list = dao.get(City.class);
             return Response.status(200).entity(list).build();
+        }
+        catch (Exception ex){
+            return Response.status(500).build();
+        }
+    }
+
+    @GET
+    @Path("city/{param}/names-only")
+    @SecuredUser
+    public Response getCityNameVariables(@PathParam(value = "param") int id){
+        try{
+            City city = dao.find(City.class, id);
+            Map<String,String> map = new HashMap<String, String>();
+            map.put("cityName", city.getName());
+            map.put("cityNameAr", city.getNameAr());
+            map.put("regionName", city.getRegion().getName());
+            map.put("regionNameAr", city.getRegion().getNameAr());
+            map.put("countryName", city.getCountry().getName());
+            map.put("countryNameAr", city.getCountry().getNameAr());
+            return Response.status(200).entity(map).build();
         }
         catch (Exception ex){
             return Response.status(500).build();
