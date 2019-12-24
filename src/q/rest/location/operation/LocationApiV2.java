@@ -91,6 +91,35 @@ public class LocationApiV2 {
 	}
 
 	@GET
+	@ValidApp
+	@Path("regions")
+	public Response getActiveRegions() {
+		try {
+			String sql = "select b from PublicRegion b order by b.name";
+			List<PublicRegion> regions = dao.getJPQLParams(PublicRegion.class, sql);
+			prepareRegionsCities(regions);
+			return Response.status(200).entity(regions).build();
+		} catch (Exception ex) {
+			return Response.status(500).build();
+		}
+	}
+
+
+	@GET
+	@ValidApp
+	@Path("cities")
+	public Response getActiveCities() {
+		try {
+			String sql = "select b from PublicCity b where b.customerStatus =:value0 order by b.name";
+			List<PublicCity> cities = dao.getJPQLParams(PublicCity.class, sql, 'A');
+			return Response.status(200).entity(cities).build();
+		} catch (Exception ex) {
+			return Response.status(500).build();
+		}
+	}
+
+
+	@GET
 	@Path("find-city/name/{param}/country/{param2}")
 	@SecuredCustomer
 	public Response findCountryCityByName(@PathParam(value = "param2") int countryId,
