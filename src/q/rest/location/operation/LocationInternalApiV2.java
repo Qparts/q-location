@@ -121,6 +121,7 @@ public class LocationInternalApiV2 implements Serializable {
             return Response.status(201).build();
         }
         catch(Exception ex){
+            ex.printStackTrace();
             return Response.status(500).build();
         }
     }
