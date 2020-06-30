@@ -1,9 +1,8 @@
 package q.rest.location.operation;
 
 import q.rest.location.dao.DAO;
-import q.rest.location.filter.SecuredCustomer;
-import q.rest.location.filter.SecuredUser;
-import q.rest.location.filter.ValidApp;
+import q.rest.location.filter.v2.SecuredCustomer;
+import q.rest.location.filter.v2.ValidApp;
 import q.rest.location.model.contract.PublicCity;
 import q.rest.location.model.contract.PublicCountry;
 import q.rest.location.model.contract.PublicRegion;

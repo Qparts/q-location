@@ -7,10 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27cf7ac1-59a1-4088-841c-71657868bb01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/exception/GlobalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/InternalAppAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilterSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilterUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilterUserSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/ValidAppAgentV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/InternalApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/SubscriberJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/UserJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/UserSubscriberJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/V3ValidApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/helper/KeyConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/model/contract/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/bcprov-jdk15on-1.65.01.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/hibernate-types-52-2.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jjwt-api-0.11.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jjwt-impl-0.11.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jjwt-jackson-0.11.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q-rest-location.iml" beforeDir="false" afterPath="$PROJECT_DIR$/q-rest-location.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredCustomerAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredCustomerAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredUserAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredUserAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/ValidApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/ValidApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/ValidAppAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/ValidAppAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/helper/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/helper/AppConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/helper/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/helper/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV2.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,10 +58,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1V3mPMngT2zfmpWwD1jTQKqXYMz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549454445322" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/libraries" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -41,28 +84,18 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="q.rest.location.helper" />
-      <recent name="q.rest.location.model.entity" />
-      <recent name="q.rest.location.dao" />
+      <recent name="q.rest.location.model.contract" />
+      <recent name="q.rest.location.exception" />
+      <recent name="q.rest.location.operation" />
+      <recent name="q.rest.location.filter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea/libraries" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/q/rest/location/filter" />
-      <recent name="$PROJECT_DIR$/src/q/rest/location/operation" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/q/rest/location/model/contract" />
+      <recent name="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation" />
+      <recent name="$PROJECT_DIR$/src/q/rest/location/filter/v3" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="JBoss 14.0.1.Final (Remote)" type="JBossConfiguration" factoryName="Remote" APPLICATION_SERVER_NAME="JBoss 14.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
@@ -113,6 +146,23 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -139,7 +189,10 @@
       <workItem from="1576491737198" duration="1378000" />
       <workItem from="1577151388810" duration="521000" />
       <workItem from="1580371519398" duration="613000" />
-      <workItem from="1582187812994" duration="33000" />
+      <workItem from="1582187812994" duration="1116000" />
+      <workItem from="1592603060395" duration="1173000" />
+      <workItem from="1592803071322" duration="1793000" />
+      <workItem from="1593520595817" duration="1106000" />
     </task>
     <servers />
   </component>
@@ -159,80 +212,60 @@
       </map>
     </option>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>q-rest-location</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>JPA</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>q-rest-location</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="458" y="195" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1592603087316">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="458" y="195" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1440.798@0.23.1440.798" timestamp="1592603087316" />
+    <state width="958" height="204" key="GridCell.Tab.0.bottom" timestamp="1592806735125">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1592612771097" />
+    <state width="958" height="204" key="GridCell.Tab.0.bottom/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735125" />
+    <state width="958" height="204" key="GridCell.Tab.0.center" timestamp="1592806735125">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1592612771096" />
+    <state width="958" height="204" key="GridCell.Tab.0.center/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735125" />
+    <state width="958" height="204" key="GridCell.Tab.0.left" timestamp="1592806735124">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1592612771096" />
+    <state width="958" height="204" key="GridCell.Tab.0.left/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735124" />
+    <state width="958" height="204" key="GridCell.Tab.0.right" timestamp="1592806735125">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1592612771097" />
+    <state width="958" height="204" key="GridCell.Tab.0.right/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735125" />
+    <state width="958" height="204" key="GridCell.Tab.1.bottom" timestamp="1592806735124">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.1.bottom/0.23.1440.797@0.23.1440.797" timestamp="1592612771096" />
+    <state width="958" height="204" key="GridCell.Tab.1.bottom/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735124" />
+    <state width="958" height="204" key="GridCell.Tab.1.center" timestamp="1592806735124">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.1.center/0.23.1440.797@0.23.1440.797" timestamp="1592612771094" />
+    <state width="958" height="204" key="GridCell.Tab.1.center/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735124" />
+    <state width="958" height="204" key="GridCell.Tab.1.left" timestamp="1592806735123">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.1.left/0.23.1440.797@0.23.1440.797" timestamp="1592612771093" />
+    <state width="958" height="204" key="GridCell.Tab.1.left/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735123" />
+    <state width="958" height="204" key="GridCell.Tab.1.right" timestamp="1592806735124">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="958" height="204" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1592612771095" />
+    <state width="958" height="204" key="GridCell.Tab.1.right/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592806735124" />
+    <state x="208" y="23" key="SettingsEditor" timestamp="1593530067732">
+      <screen x="0" y="23" width="1440" height="795" />
+    </state>
+    <state x="208" y="23" key="SettingsEditor/0.23.1440.795@0.23.1440.795" timestamp="1593530067732" />
+    <state x="208" y="23" key="SettingsEditor/0.23.1440.798@0.23.1440.798" timestamp="1592603089627" />
+    <state x="208" y="23" key="SettingsEditor/1440.-73.1024.745/0.23.1440.797@0.23.1440.797" timestamp="1592803623239" />
+    <state x="424" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593530032253">
+      <screen x="0" y="23" width="1440" height="795" />
+    </state>
+    <state x="424" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.795@0.23.1440.795" timestamp="1593530032253" />
   </component>
 </project>

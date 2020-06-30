@@ -6,6 +6,12 @@ import java.util.Random;
 
 public class Helper {
 
+
+    public static Date addDays(Date original, long days) {
+        return new Date(original.getTime() + (1000L * 60 * 60 * 24 * days));
+    }
+
+
     public static int getRandomInteger(int min, int max) {
         Random random = new Random();
         return random.nextInt(max - min + 1) + min;

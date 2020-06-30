@@ -1,7 +1,7 @@
 package q.rest.location.operation;
 
 import q.rest.location.dao.DAO;
-import q.rest.location.filter.SecuredUser;
+import q.rest.location.filter.v2.SecuredUser;
 import q.rest.location.model.entity.City;
 import q.rest.location.model.entity.Country;
 import q.rest.location.model.entity.Region;
