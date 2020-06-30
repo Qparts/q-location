@@ -7,40 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27cf7ac1-59a1-4088-841c-71657868bb01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/exception/GlobalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/InternalAppAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilterSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/JwtFilterUserSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/ValidAppAgentV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/InternalApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/SubscriberJwt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/UserJwt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/UserSubscriberJwt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v3/annotation/V3ValidApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/helper/KeyConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/model/contract/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/bcprov-jdk15on-1.65.01.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/hibernate-types-52-2.9.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jjwt-api-0.11.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jjwt-impl-0.11.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jjwt-jackson-0.11.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q-rest-location.iml" beforeDir="false" afterPath="$PROJECT_DIR$/q-rest-location.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredCustomerAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredCustomerAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/SecuredUserAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/SecuredUserAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/ValidApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/ValidApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/filter/ValidAppAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/filter/v2/ValidAppAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/helper/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/helper/AppConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/helper/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/helper/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build19.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +160,8 @@
       <workItem from="1582187812994" duration="1116000" />
       <workItem from="1592603060395" duration="1173000" />
       <workItem from="1592803071322" duration="1793000" />
-      <workItem from="1593520595817" duration="1106000" />
+      <workItem from="1593520595817" duration="1431000" />
+      <workItem from="1593530936406" duration="20000" />
     </task>
     <servers />
   </component>
