@@ -1,7 +1,9 @@
 package q.rest.location.operation;
 
 import q.rest.location.dao.DAO;
+import q.rest.location.filter.v3.annotation.InternalApp;
 import q.rest.location.filter.v3.annotation.UserJwt;
+import q.rest.location.model.contract.CityReduced;
 import q.rest.location.model.entity.City;
 import q.rest.location.model.entity.Country;
 import q.rest.location.model.entity.Region;
@@ -11,7 +13,9 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 
 @Path("/internal/api/v3/")
@@ -73,6 +77,19 @@ public class LocationInternalApiV3 implements Serializable {
         catch (Exception ex){
             return Response.status(500).build();
         }
+    }
+
+    @POST
+    @InternalApp
+    @Path("cities/reduced")
+    public Response getCityReduced(Map<String,Object> map){
+        String sql = "select * from loc_city c where c.id in (0 ";
+        for(int id : (ArrayList<Integer>)map.get("cityIds")){
+            sql += ","+id;
+        }
+        sql += ")";
+        List<CityReduced> reduced = dao.getNative(CityReduced.class, sql);
+        return Response.ok().entity(reduced).build();
     }
 
 }

@@ -7,8 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27cf7ac1-59a1-4088-841c-71657868bb01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/model/contract/CityReduced.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/model/contract/CountryReduced.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/q/rest/location/model/contract/RegionReduced.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationApiV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/q/rest/location/operation/LocationInternalApiV3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +55,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="q.rest.location.helper" />
       <recent name="q.rest.location.model.contract" />
+      <recent name="q.rest.location.helper" />
       <recent name="q.rest.location.exception" />
       <recent name="q.rest.location.operation" />
       <recent name="q.rest.location.filter" />
@@ -124,6 +128,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -161,7 +170,8 @@
       <workItem from="1592603060395" duration="1173000" />
       <workItem from="1592803071322" duration="1793000" />
       <workItem from="1593520595817" duration="1431000" />
-      <workItem from="1593530936406" duration="20000" />
+      <workItem from="1593530936406" duration="83000" />
+      <workItem from="1594469722480" duration="2708000" />
     </task>
     <servers />
   </component>
@@ -182,6 +192,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1594471519417">
+      <screen x="0" y="23" width="1440" height="793" />
+    </state>
+    <state x="533" y="110" key="#com.intellij.ide.util.MemberChooser/0.23.1440.793@0.23.1440.793" timestamp="1594471519417" />
     <state x="458" y="195" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1592603087316">
       <screen x="0" y="23" width="1440" height="798" />
     </state>

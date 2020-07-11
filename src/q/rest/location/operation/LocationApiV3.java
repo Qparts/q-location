@@ -1,7 +1,10 @@
 package q.rest.location.operation;
 
 import q.rest.location.dao.DAO;
+import q.rest.location.filter.v3.annotation.InternalApp;
 import q.rest.location.filter.v3.annotation.V3ValidApp;
+import q.rest.location.helper.AppConstants;
+import q.rest.location.model.contract.CityReduced;
 import q.rest.location.model.contract.PublicCity;
 import q.rest.location.model.contract.PublicCountry;
 import q.rest.location.model.contract.PublicRegion;
@@ -13,7 +16,9 @@ import javax.ws.rs.client.Invocation.Builder;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Path("/api/v3/")
 @Consumes(MediaType.APPLICATION_JSON)
