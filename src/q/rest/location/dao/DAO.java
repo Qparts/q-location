@@ -102,9 +102,25 @@ public class DAO {
         return (List<T>) em.createNativeQuery(sql, klass).getResultList();
     }
 
+
+
     public List getNative(String sql) {
         return em.createNativeQuery(sql).getResultList();
     }
+
+
+    @SuppressWarnings("unchecked")
+    public <T> T findNative(Class<T> klass, String sql) {
+        return (T) em.createNativeQuery(sql).getSingleResult();
+    }
+
+
+    public <T> List<T> getNativeOffsetMax(Class<T> klass, String jpql, int offset, int max){
+        Query q = em.createNativeQuery(jpql, klass);
+        q.setFirstResult(offset).setMaxResults(max);
+        return (List<T>) q.getResultList();
+    }
+
 
     public void updateNative(String sql) {
         em.createNativeQuery(sql).executeUpdate();
@@ -133,6 +149,8 @@ public class DAO {
         }
 
     }
+
+
 
     public <T> T find(Class<T> klass, Object obj) {
         try{

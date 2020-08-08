@@ -41,7 +41,6 @@ public class Country implements Serializable{
 	private char internalStatus;
 	@Transient
 	private List<City> cities;
-	
 	@Transient
 	private List<Region> regions;
 

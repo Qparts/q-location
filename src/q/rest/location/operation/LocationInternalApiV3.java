@@ -4,9 +4,7 @@ import q.rest.location.dao.DAO;
 import q.rest.location.filter.v3.annotation.InternalApp;
 import q.rest.location.filter.v3.annotation.UserJwt;
 import q.rest.location.model.contract.CityReduced;
-import q.rest.location.model.entity.City;
-import q.rest.location.model.entity.Country;
-import q.rest.location.model.entity.Region;
+import q.rest.location.model.entity.*;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
@@ -26,6 +24,59 @@ public class LocationInternalApiV3 implements Serializable {
     @EJB
     private DAO dao;
 
+
+    @POST
+    @UserJwt
+    @Path("country")
+    public Response createCountry(Country country){
+        List<Country> check = dao.getCondition(Country.class, "name", country.getName());
+        if(!check.isEmpty()){
+            return Response.status(409).build();
+        }
+        dao.persist(country);
+        return Response.status(200).build();
+    }
+
+
+    @PUT
+    @UserJwt
+    @Path("country")
+    public Response updateCountry(Country country){
+        dao.update(country);
+        return Response.status(200).build();
+    }
+
+    @POST
+    @UserJwt
+    @Path("region")
+    public Response createCountry(Region region){
+        List<Region> check = dao.getTwoConditions(Region.class, "name", "country.id", region.getName(), region.getCountry().getId());
+        if(!check.isEmpty()){
+            return Response.status(409).build();
+        }
+        dao.persist(region);
+        return Response.status(200).build();
+    }
+
+    @POST
+    @UserJwt
+    @Path("city")
+    public Response createCity(City city){
+        List<City> check = dao.getTwoConditions(City.class, "name", "country.id", city.getName(), city.getCountry().getId());
+        if(!check.isEmpty()){
+            return Response.status(409).build();
+        }
+        dao.persist(city);
+        return Response.status(200).build();
+    }
+
+    @PUT
+    @UserJwt
+    @Path("region")
+    public Response updateRegion(Region region){
+        dao.update(region);
+        return Response.status(200).build();
+    }
 
     @GET
     @Path("countries")
