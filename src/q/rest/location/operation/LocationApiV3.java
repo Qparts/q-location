@@ -1,15 +1,12 @@
 package q.rest.location.operation;
 
 import q.rest.location.dao.DAO;
-import q.rest.location.filter.v3.annotation.InternalApp;
-import q.rest.location.filter.v3.annotation.UserJwt;
+import q.rest.location.filter.v2.SecuredUser;
+import q.rest.location.filter.v3.annotation.SubscriberJwt;
 import q.rest.location.filter.v3.annotation.V3ValidApp;
-import q.rest.location.helper.AppConstants;
-import q.rest.location.model.contract.CityReduced;
 import q.rest.location.model.contract.PublicCity;
 import q.rest.location.model.contract.PublicCountry;
 import q.rest.location.model.contract.PublicRegion;
-import q.rest.location.model.entity.Country;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
@@ -18,7 +15,10 @@ import javax.ws.rs.client.Invocation.Builder;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Path("/api/v3/")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -103,7 +103,6 @@ public class LocationApiV3 {
 		}
 	}
 
-
 	@GET
 	@V3ValidApp
 	@Path("cities")
@@ -115,6 +114,39 @@ public class LocationApiV3 {
 		} catch (Exception ex) {
 			return Response.status(500).build();
 		}
+	}
+
+	@POST
+	@SubscriberJwt
+	@Path("search-locations")
+	public Response searchLocations(Map<String,String> map){
+		String query = "%" +map.get("query").trim() + "%";
+		String sql = "select b from PublicCountry b where b.customerStatus =:value0 and (lower(b.name) like :value1 or lower(b.nameAr) like :value1)";
+		List<PublicCountry> countries = dao.getJPQLParams(PublicCountry.class, sql, 'A', query);
+		sql = "select b from PublicRegion b where lower(b.name) like :value0 or lower(b.nameAr) like :value0";
+		List<PublicRegion> regions = dao.getJPQLParams(PublicRegion.class, sql, query);
+		sql = "select b from PublicCity b where b.customerStatus =:value0 and (lower(b.name) like :value1 or lower(b.nameAr) like :value1)";
+		List<PublicCity> cities = dao.getJPQLParams(PublicCity.class, sql, 'A', query);
+		List<Map<String,Object>> result = new ArrayList<>();
+		for(var c : countries) {
+			Map<String,Object> mp = new HashMap<>();
+			mp.put("type", 'C');
+			mp.put("object", c);
+			result.add(mp);
+		}
+		for(var c : regions) {
+			Map<String,Object> mp = new HashMap<>();
+			mp.put("type", 'R');
+			mp.put("object", c);
+			result.add(mp);
+		}
+		for(var c : cities) {
+			Map<String,Object> mp = new HashMap<>();
+			mp.put("type", 'T');
+			mp.put("object", c);
+			result.add(mp);
+		}
+		return Response.status(200).entity(result).build();
 	}
 
 	public Response getSecuredRequest(String link, String authHeader) {
